@@ -15,7 +15,7 @@ bot.onText(/\/echo (салоны)/i, (msg) => {
 
 bot.onText(/\/echo (кот)/i, (msg) => {
     const chatId = msg.chat.id;
-    bot.sendPhoto(chatId, 'cat.jpg');
+    bot.sendPhoto(chatId, './images/cat.jpg');
 });
 
 // клавиатура
@@ -41,6 +41,6 @@ bot.on('callback_query', (query) => {
     let img = '';
 
     if (query.data === 'catchedCat') {
-        img = ''
+        img = './images/catched.jpg';
     }
 });
